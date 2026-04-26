@@ -1,7 +1,7 @@
 
 sudo yum install java-21-amazon-corretto -y
-sudo wget -O /etc/yum.repos.d/jenkins.repo https://jenkins.io
-sudo rpm --import https://jenkins.io
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/rpm-stable/jenkins.repo
 sudo yum install jenkins -y
 sudo yum install git -y
 sudo systemctl daemon-reload
